@@ -1,8 +1,9 @@
 ﻿/*
- 
-
-
+Lesson #3 Data types and variables
+Very nice
 */
+
+
 using System;
 
 
