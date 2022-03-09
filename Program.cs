@@ -53,7 +53,31 @@ namespace SuperHero
             salary += paybackMoney;
              var totalDeedTime = (deedTimeInHours1 + deedTimeInHours2 + deedTimeInHours3);
             var averageDeedTime = totalDeedTime/3;
-           
+            
+
+            Console.WriteLine("Please enter your grade:");
+            char deedGrade = Console.ReadLine();   // Fix later Parse
+            Console.ReadLine();
+           switch (deedGrade)
+            {
+                case 'A':
+                case 'B':
+                    Console.WriteLine("Perfect! You are so brave!");
+                    break;
+                case 'C':
+                    Console.WriteLine("Good! But You can do better!");
+                    break;
+                case 'D':
+                case 'E':
+                    Console.WriteLine("It is not good! You should choose your bad or good side!");
+                    break;
+                case 'G':
+                    Console.WriteLine("Bad, you are true villain");
+                    break;
+                default:
+                    Console.WriteLine($"{name}, you need to work harder, but this isn't the end of the world! :)");
+                    break;
+            }
             
 
             Console.WriteLine("************FINANCIAL INFO***************\n");
